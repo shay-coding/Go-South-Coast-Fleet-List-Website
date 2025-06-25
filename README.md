@@ -35,7 +35,7 @@ I'm a massive bus enthusiast and wanted:
 
 ## 🚧 Known Issues
 
-- **Livery images may not appear yet** — the final image loading code is still being finished and will be added soon.
+- **Some livery images may not appear yet** — liveries are still in the process of being uploaded. I'm working on getting them all added
 
 ---
 
