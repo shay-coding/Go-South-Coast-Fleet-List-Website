@@ -55,7 +55,7 @@ Make sure your CSV uses this format (8 columns):
 Fleet No, Reg Plate, Year, Model, Operator, Livery, Status, Notes
 
 - The **Operator** column should match a filename in `/images` (e.g. `bluestar.png`)
-- The **Livery** column should match a filename in `/liveries` (e.g. `hf12gyb.png`)
+- The **Livery** column should match a filename in `/liveries` (e.g. `bluestarnew.png`)
 
 ### 3. Add Images
 
