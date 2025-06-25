@@ -1,0 +1,57 @@
+body {
+  font-family: sans-serif;
+  background: #121212;
+  color: #91D7EC;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #0095D9;
+  padding: 1rem;
+  text-align: center;
+}
+
+header h1 {
+  color: #91D7EC;
+  margin: 0;
+}
+
+.table-container {
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #1e1e1e;
+}
+
+th, td {
+  border: 1px solid #2a2a2a;
+  padding: 10px;
+  text-align: left;
+  font-size: 0.9rem;
+  color: #91D7EC;
+}
+
+th {
+  background-color: #0095D9;
+}
+
+tr:nth-child(even) {
+  background-color: #181818;
+}
+
+.operator-logo {
+  max-height: 28px;
+  filter: drop-shadow(0 0 2px #000);
+}
+
+.livery-image {
+  max-height: 40px;
+  border-radius: 4px;
+  box-shadow: 0 0 3px #000;
+  display: block;
+}
