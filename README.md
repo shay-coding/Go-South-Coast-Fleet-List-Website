@@ -33,12 +33,6 @@ I'm a massive bus enthusiast and wanted:
 
 ---
 
-## 🚧 Known Issues
-
-- **Some livery images may not appear yet** — liveries are still in the process of being uploaded. I'm working on getting them all added
-
----
-
 ## 🛠️ How to Make Your Own Version
 
 Want to use this as a base for your own project or bus company? Here's how:
