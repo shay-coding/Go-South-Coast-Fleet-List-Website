@@ -1,5 +1,6 @@
 body {
   font-family: sans-serif;
+  font-family: 'Google Sans', sans-serif;
   background: #121212;
   color: #91D7EC;
   margin: 0;
@@ -36,6 +37,39 @@ th, td {
   color: #91D7EC;
 }
 
+.filters {
+  padding: 1rem;
+  background-color: #1e1e1e;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.filters label {
+  color: #91D7EC;
+  font-weight: bold;
+}
+
+.filters select {
+  background-color: #2a2a2a;
+  color: #91D7EC;
+  border: 1px solid #0095D9;
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.filters select:hover {
+  background-color: #333;
+}
+
+.filters select:focus {
+  outline: none;
+  border-color: #91D7EC;
+}
+
 th {
   background-color: #0095D9;
 }
@@ -54,4 +88,8 @@ tr:nth-child(even) {
   border-radius: 4px;
   box-shadow: 0 0 3px #000;
   display: block;
+}
+
+td:nth-child(2) {
+  white-space: nowrap;
 }
