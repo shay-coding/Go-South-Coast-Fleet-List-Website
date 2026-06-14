@@ -32,9 +32,17 @@ fetch("fleet.csv")
     Array.from(operators).sort().forEach(operator => {
       const option = document.createElement("option");
       option.value = operator;
-      // Remove .png and capitalize first letter
-      const displayName = operator.replace(/\.png$/i, '');
-      option.textContent = displayName.charAt(0).toUpperCase() + displayName.slice(1);
+      // Remove .png and format display name
+      let displayName = operator.replace(/\.png$/i, '');
+      // Map abbreviations to full names
+      const operatorNames = {
+        'sv': 'Southern Vectis',
+        'damory': 'Damory',
+        'salisbury': 'Salisbury Reds',
+        'swindon': 'Swindon\'s Bus Company',
+      };
+      displayName = operatorNames[displayName.toLowerCase()] || (displayName.charAt(0).toUpperCase() + displayName.slice(1));
+      option.textContent = displayName;
       operatorSelect.appendChild(option);
     });
     
