@@ -4,16 +4,6 @@ This is a simple website made to display the full fleet list of Go South Coast b
 
 ---
 
-## 📌 Why I Made This
-
-I'm a massive bus enthusiast and wanted:
-- A public, easy-to-read list of Go South Coast vehicles
-- A visual way to show operator logos and actual liveries
-- To practise my web and GitHub skills
-- A foundation for more advanced tools in the future
-
----
-
 ## ✅ Current Features
 
 - Dark mode table layout
