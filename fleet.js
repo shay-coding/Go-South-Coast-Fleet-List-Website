@@ -32,7 +32,9 @@ fetch("fleet.csv")
     Array.from(operators).sort().forEach(operator => {
       const option = document.createElement("option");
       option.value = operator;
-      option.textContent = operator;
+      // Remove .png and capitalize first letter
+      const displayName = operator.replace(/\.png$/i, '');
+      option.textContent = displayName.charAt(0).toUpperCase() + displayName.slice(1);
       operatorSelect.appendChild(option);
     });
     
