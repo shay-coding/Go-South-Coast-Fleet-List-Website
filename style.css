@@ -1,5 +1,5 @@
 body {
-  font-family: 'Google Sans', sans-serif;
+  font-family: sans-serif;
   background: #121212;
   color: #91D7EC;
   margin: 0;
@@ -36,39 +36,6 @@ th, td {
   color: #91D7EC;
 }
 
-.filters {
-  padding: 1rem;
-  background-color: #1e1e1e;
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.filters label {
-  color: #91D7EC;
-  font-weight: bold;
-}
-
-.filters select {
-  background-color: #2a2a2a;
-  color: #91D7EC;
-  border: 1px solid #0095D9;
-  padding: 0.5rem;
-  border-radius: 4px;
-  font-size: 0.9rem;
-  cursor: pointer;
-}
-
-.filters select:hover {
-  background-color: #333;
-}
-
-.filters select:focus {
-  outline: none;
-  border-color: #91D7EC;
-}
-
 th {
   background-color: #0095D9;
 }
@@ -78,34 +45,13 @@ tr:nth-child(even) {
 }
 
 .operator-logo {
-  display: block;
-  margin: 0 auto;
-  object-fit: contain;
-  max-width: 100%;
-  width: 120px;
-  max-height: 40px;
+  max-height: 28px;
   filter: drop-shadow(0 0 2px #000);
 }
 
 .livery-image {
-  width: 180px;
-  max-height: 80px;
+  max-height: 40px;
   border-radius: 4px;
   box-shadow: 0 0 3px #000;
-}
-
-@media (max-width: 768px) {
-  .operator-logo {
-    width: 90px;
-    max-height: 32px;
-  }
-
-  .livery-image {
-    width: 140px;
-    max-height: 70px;
-  }
-}
-
-td:nth-child(2) {
-  white-space: nowrap;
+  display: block;
 }
