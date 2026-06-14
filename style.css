@@ -55,3 +55,7 @@ tr:nth-child(even) {
   box-shadow: 0 0 3px #000;
   display: block;
 }
+
+td:nth-child(2) {
+  white-space: nowrap;
+}
