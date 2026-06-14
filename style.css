@@ -36,6 +36,39 @@ th, td {
   color: #91D7EC;
 }
 
+.filters {
+  padding: 1rem;
+  background-color: #1e1e1e;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.filters label {
+  color: #91D7EC;
+  font-weight: bold;
+}
+
+.filters select {
+  background-color: #2a2a2a;
+  color: #91D7EC;
+  border: 1px solid #0095D9;
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.filters select:hover {
+  background-color: #333;
+}
+
+.filters select:focus {
+  outline: none;
+  border-color: #91D7EC;
+}
+
 th {
   background-color: #0095D9;
 }
