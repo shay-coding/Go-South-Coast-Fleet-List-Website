@@ -77,16 +77,37 @@ tr:nth-child(even) {
   background-color: #181818;
 }
 
+..operator-logo,
+.livery-image {
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+  max-width: 100%;
+}
+
 .operator-logo {
-  max-height: 28px;
+  width: 120px;
+  max-height: 40px;
   filter: drop-shadow(0 0 2px #000);
 }
 
 .livery-image {
-  max-height: 40px;
+  width: 180px;
+  max-height: 80px;
   border-radius: 4px;
   box-shadow: 0 0 3px #000;
-  display: block;
+}
+
+@media (max-width: 768px) {
+  .operator-logo {
+    width: 90px;
+    max-height: 32px;
+  }
+
+  .livery-image {
+    width: 140px;
+    max-height: 70px;
+  }
 }
 
 td:nth-child(2) {
