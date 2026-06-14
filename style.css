@@ -77,15 +77,11 @@ tr:nth-child(even) {
   background-color: #181818;
 }
 
-..operator-logo,
-.livery-image {
+.operator-logo {
   display: block;
   margin: 0 auto;
   object-fit: contain;
   max-width: 100%;
-}
-
-.operator-logo {
   width: 120px;
   max-height: 40px;
   filter: drop-shadow(0 0 2px #000);
