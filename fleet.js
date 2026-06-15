@@ -79,7 +79,21 @@ function renderTable(rows) {
     const tr = document.createElement("tr");
     row.forEach((cell, idx) => {
       const td = document.createElement("td");
-      if (idx === 4) { // Operator logo
+      if (idx === 1) { // Reg Plate - make it clickable
+        const link = document.createElement("a");
+        link.textContent = cell;
+        link.href = "#";
+        link.style.cursor = "pointer";
+        link.style.color = "inherit";
+        link.style.textDecoration = "underline";
+        link.onclick = (e) => {
+          e.preventDefault();
+          const regPlate = cell.trim();
+          const flickrUrl = `https://www.flickr.com/search/?text=${encodeURIComponent(regPlate)}`;
+          window.open(flickrUrl, "_blank");
+        };
+        td.appendChild(link);
+      } else if (idx === 4) { // Operator logo
         const img = document.createElement("img");
         img.src = `images/${cell.trim()}`;
         img.className = "operator-logo";
