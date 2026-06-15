@@ -75,6 +75,10 @@ function renderTable(rows) {
   const tbody = document.querySelector("#fleet-table tbody");
   tbody.innerHTML = "";
   
+  // Update the count
+  const countElement = document.querySelector("#fleet-count");
+  countElement.textContent = `Fleet Numbers Available: ${rows.length}`;
+  
   rows.forEach(row => {
     const tr = document.createElement("tr");
     row.forEach((cell, idx) => {
@@ -90,7 +94,6 @@ function renderTable(rows) {
           e.preventDefault();
           const regPlate = cell.trim();
           const flickrUrl = `https://www.flickr.com/search/?text=${encodeURIComponent(regPlate)}&sort=date-taken-desc`;
-          window.open(flickrUrl, "_blank");
           window.open(flickrUrl, "_blank");
         };
         td.appendChild(link);
