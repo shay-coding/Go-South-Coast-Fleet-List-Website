@@ -89,7 +89,8 @@ function renderTable(rows) {
         link.onclick = (e) => {
           e.preventDefault();
           const regPlate = cell.trim();
-          const flickrUrl = `https://www.flickr.com/search/?text=${encodeURIComponent(regPlate)}`;
+          const flickrUrl = `https://www.flickr.com/search/?text=${encodeURIComponent(regPlate)}&sort=date-taken-desc`;
+          window.open(flickrUrl, "_blank");
           window.open(flickrUrl, "_blank");
         };
         td.appendChild(link);
